@@ -3,10 +3,10 @@ package java;
 import java.util.Scanner;
 
 public class Computer {
-    protected boolean processor;
+    protected boolean cpu;
     protected boolean ram;
-    protected boolean harddrive;
-    protected int cikl;
+    protected boolean hardDrive;
+    protected int loop;
 
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
@@ -17,15 +17,15 @@ public class Computer {
             case "Да" -> {
                 System.out.print("Ну-с, какое число я загадал?: ");
                 int count = num.nextInt();
-                int a = 0;
-                int b = 1;
-                int random_number = a + (int) (Math.random() * b);
+                int firstVariantOfNumberComputer = 0;
+                int secondVariantOfNumberComputer = 1;
+                int random_number = firstVariantOfNumberComputer + (int) (Math.random() *
+                        secondVariantOfNumberComputer);
                 for (int i = 1; i < 10; i++) {
                     if (random_number > count) {
                         System.out.println("Не верно:)! Мое число больше > твоего ");
                         System.out.print("Какое число я загадал?: ");
                         int number2 = num.nextInt();
-
 
                     } else if (random_number < count) {
                         System.out.println("Не верно:)! Мое число меньше < твоего ");
