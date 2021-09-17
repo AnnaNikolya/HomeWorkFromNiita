@@ -15,7 +15,6 @@ public abstract class RoadTransport extends Transport {
 
     public void autoCharacteristics(int carPower, int speed, int weight, String brand) {
         System.out.println("Данные об автомобиле:" + carPower + speed + weight + brand);
-
     }
 }
 

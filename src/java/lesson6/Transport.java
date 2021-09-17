@@ -1,8 +1,6 @@
 package java.lesson6;
 
 
-import java.util.Scanner;
-
 public abstract class Transport {
     private int carPower;
     private int speed;
